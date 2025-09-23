@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Webpage</title>
+    <link rel="shortcut icon" href="https://media.istockphoto.com/id/518383549/photo/golden-shining-metallic-3d-symbol-capital-letter-b-uppercase.jpg?s=612x612&w=0&k=20&c=3C6-r7K6zTd-P1c6GpNcFGyQaE0P2O6PiO_MREOgqsA=" type="image/x-icon">
+    <style>
+      body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+      }
+
+      /* Navbar (Desktop First) */
+      .container {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        background-color: black;
+        padding: 15px 0; /* Corrected padding to remove black borders */
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 10;
+        box-sizing: border-box; 
+      }
+
+      .div_list {
+        color: white;
+        margin: 8px;
+        font-size: 20px;
+        font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+      }
+
+      #zero {
+        color: orange;
+        font-size: 24px;
+        font-weight: bold;
+      }
+
+      #five a,
+      #six a {
+        color: red;
+      }
+
+      a {
+        text-decoration: none;
+        color: inherit;
+      }
+
+      /* Hero Section */
+      #image {
+        background-image: url("https://cdn.pixabay.com/photo/2024/03/15/16/04/nature-8635305_1280.jpg");
+        height: 100vh;
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding-top: 80px; 
+        box-sizing: border-box;
+      }
+
+      #heading {
+        color: yellow;
+        font-size: 30px;
+        font-family: "Times New Roman", Times, serif;
+        margin-bottom: 20px;
+      }
+
+      p {
+        color: white;
+        max-width: 800px;
+        line-height: 1.6;
+        margin-bottom: 20px;
+        padding: 0 20px; 
+      }
+
+      button {
+        background-color: black;
+        border: 2px solid black;
+        border-radius: 5px;
+        padding: 10px 20px;
+        color: white;
+        cursor: pointer;
+        transition: background-color 0.3s, color 0.3s;
+      }
+
+      button:hover {
+        background-color: rgb(143, 108, 21);
+        color: black;
+      }
+
+      /* Responsive Design for Mobile Devices (max-width: 768px) */
+      @media (max-width: 768px) {
+        .container {
+          flex-direction: row; /* Ensures links stay in a horizontal line */
+          justify-content: center;
+          position: static;
+          padding: 10px 0;
+          flex-wrap: wrap; 
+        }
+
+        .div_list {
+          margin: 5px;
+          font-size: 14px; 
+          text-align: center;
+        }
+
+        #image {
+          padding-top: 20px;
+        }
+
+        #heading {
+          font-size: 24px;
+        }
+
+        p {
+          font-size: 14px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div id="zero" class="div_list">Besant Technology</div>
+      <div id="one" class="div_list">Home</div>
+      <div id="two" class="div_list">About</div>
+      <div id="three" class="div_list">Contacts</div>
+      <div id="four" class="div_list">Blogs</div>
+      <div id="five" class="div_list"><a href="./Registerpage.html" target="_blank">Register</a></div>
+      <div id="six" class="div_list"><a href="">Sign in</a></div>
+    </div>
+
+    <div id="image">
+      <div id="heading"><b>Welcome To Besant Technology</b></div>
+      <p>
+        Besant Technologies is a well-known IT training institute in India that
+        offers both classroom and online courses in various technologies such as
+        Full Stack Development, Data Science, Cloud Computing, DevOps, Python,
+        Java, and many more. It has multiple branches mainly in Chennai and
+        Bangalore, and it promotes itself as a center for training with
+        real-time projects and placement assistance. The institute provides
+        flexible learning options including weekday, weekend, and online
+        classes, aiming to help students and professionals upgrade their skills.
+      </p>
+      <button>
+        <a href="https://www.besanttechnologies.com/branches/besant-technologies-marathahalli-bangalore" target="_blank">Learn More</a>
+      </button>
+    </div>
+  </body>
+</html>

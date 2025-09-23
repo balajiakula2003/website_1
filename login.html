@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            display: flex; /* Use flexbox to center content on the page */
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh; /* Ensures the page takes up the full viewport height */
+            background-color: #f0f0f0; /* A light gray background for a clean look */
+        }
+
+        .container {
+            background-color: rgba(131, 168, 171, 0.764);
+            max-width: 500px; /* Use max-width for responsiveness */
+            width: 90%; /* Ensures the container takes up 90% of the screen width on smaller devices */
+            border-radius: 10px;
+            padding: 20px;
+            box-sizing: border-box; /* Includes padding in the total width/height */
+        }
+
+        .form-header {
+            background-color: rgba(10, 80, 165, 0.278);
+            border-radius: 10px;
+            padding: 10px;
+            text-align: center;
+            margin-bottom: 20px; /* Adds space below the header */
+        }
+        
+        .form-header h3 {
+            margin: 0;
+            font-size: 30px;
+            font-family: "Times New Roman", Times, serif;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block; /* Makes the label a block for better vertical spacing */
+            font-size: 16px;
+            margin-bottom: 5px;
+        }
+
+        .form-group input {
+            width: 100%;
+            padding: 10px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        .form-button {
+            text-align: center; /* Centers the button */
+        }
+
+        button[type="submit"] {
+            background-color: aqua;
+            border: 3px solid black;
+            border-radius: 5px;
+            padding: 8px 30px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+        }
+
+        button[type="submit"]:hover {
+            background-color: #00cccc; /* Slightly darker aqua on hover */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="form-header">
+            <h3>Login</h3>
+        </div>
+        <form action="./login.html" method="post">
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Enter Your Email" required />
+            </div>
+
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" placeholder="Enter Your Password" required />
+            </div>
+
+            <div class="form-button">
+                <button type="submit">Login</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

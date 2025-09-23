@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            display: flex; /* Centers the content */
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh; /* Ensures the page is at least full height */
+            background-color: #f0f0f0; /* Light gray background for the page */
+        }
+
+        .container {
+            background-color: rgba(131, 168, 171, 0.764);
+            max-width: 700px; /* Use max-width for responsiveness */
+            width: 90%; /* Adjust width for smaller screens */
+            border-radius: 10px;
+            padding: 20px;
+            box-sizing: border-box; /* Includes padding in the total width/height */
+        }
+
+        #one {
+            background-color: rgba(10, 80, 165, 0.278);
+            border-radius: 10px;
+            padding: 10px;
+            text-align: center;
+        }
+
+        #one h3 {
+            margin: 0;
+            font-size: 30px;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        .form-content {
+            padding: 20px;
+        }
+
+        .form-content label,
+        .form-content input,
+        .form-content select,
+        .form-content button {
+            display: block; /* Makes each element a block for vertical stacking */
+            width: 100%;
+            margin-bottom: 15px; /* Adds space between elements */
+            box-sizing: border-box;
+        }
+
+        .form-content input[type="radio"] {
+            display: inline-block; /* Aligns radio buttons horizontally */
+            width: auto;
+            margin-right: 10px;
+        }
+
+        .form-content input[type="text"],
+        .form-content input[type="email"],
+        .form-content input[type="number"],
+        .form-content input[type="password"],
+        .form-content select {
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        
+        .form-content button[type="submit"] {
+            background-color: aqua;
+            border: 3px solid black;
+            border-radius: 5px;
+            padding: 10px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-top: 10px;
+        }
+        
+        /* Mobile styles */
+        @media (max-width: 768px) {
+            .container {
+                width: 95%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="one">
+            <h3>Register</h3>
+        </div>
+        <div class="form-content">
+            <form action="./login.html" method="get">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter Your Name" required /><br />
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Enter Your Email" required /><br />
+                
+                <label for="phone">Phone Number:</label>
+                <input type="number" id="phone" name="phone" placeholder="Enter Your Phone" required /><br />
+                
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" placeholder="Enter Your Password" required /><br />
+                
+                <label>Gender:</label>
+                <input type="radio" name="gender" value="male" required /> Male
+                <input type="radio" name="gender" value="female" required /> Female<br />
+                
+                <label for="country">Country:</label>
+                <select id="country" name="country" required>
+                    <option value="">--Select--</option>
+                    <option value="india">India</option>
+                    <option value="usa">USA</option>
+                    <option value="uk">UK</option>
+                    <option value="other">Other</option>
+                </select><br />
+                
+                <button type="submit">Register</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
