@@ -4,7 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Webpage</title>
-    <link rel="shortcut icon" href="https://media.istockphoto.com/id/518383549/photo/golden-shining-metallic-3d-symbol-capital-letter-b-uppercase.jpg?s=612x612&w=0&k=20&c=3C6-r7K6zTd-P1c6GpNcFGyQaE0P2O6PiO_MREOgqsA=" type="image/x-icon">
+    <link
+      rel="shortcut icon"
+      href="https://media.istockphoto.com/id/518383549/photo/golden-shining-metallic-3d-symbol-capital-letter-b-uppercase.jpg?s=612x612&w=0&k=20&c=3C6-r7K6zTd-P1c6GpNcFGyQaE0P2O6PiO_MREOgqsA="
+      type="image/x-icon"
+    />
     <style>
       body {
         margin: 0;
@@ -22,7 +26,7 @@
         top: 0;
         width: 100%;
         z-index: 10;
-        box-sizing: border-box; 
+        box-sizing: border-box;
       }
 
       .div_list {
@@ -40,7 +44,7 @@
 
       #five a,
       #six a {
-        color: red;
+        color: rgb(0, 255, 72);
       }
 
       a {
@@ -59,7 +63,7 @@
         justify-content: center;
         align-items: center;
         text-align: center;
-        padding-top: 80px; 
+        padding-top: 80px;
         box-sizing: border-box;
       }
 
@@ -72,10 +76,11 @@
 
       p {
         color: white;
-        max-width: 800px;
+        max-width: 90%;
         line-height: 1.6;
         margin-bottom: 20px;
-        padding: 0 20px; 
+        padding: 0 20px;
+        
       }
 
       button {
@@ -85,28 +90,30 @@
         padding: 10px 20px;
         color: white;
         cursor: pointer;
-        transition: background-color 0.3s, color 0.3s;
+        transition: background-color 0.4s, color 0.6s;
+        margin: 20px;
       }
 
       button:hover {
-        background-color: rgb(143, 108, 21);
+        background-color: rgb(255, 183, 0);
         color: black;
       }
 
       /* Responsive Design for Mobile Devices (max-width: 768px) */
-      @media (max-width: 768px) {
+      @media screen and (min-width: 481px) and (max-width: 768px) {
         .container {
           flex-direction: row; /* Ensures links stay in a horizontal line */
           justify-content: center;
           position: static;
           padding: 10px 0;
-          flex-wrap: wrap; 
+          flex-wrap: wrap;
         }
 
         .div_list {
           margin: 5px;
-          font-size: 14px; 
+          font-size: 14px;
           text-align: center;
+          color: aqua;
         }
 
         #image {
@@ -114,11 +121,14 @@
         }
 
         #heading {
-          font-size: 24px;
+          font-size: 30px;
+          
         }
 
         p {
           font-size: 14px;
+          margin: 0px;
+
         }
       }
     </style>
@@ -126,12 +136,21 @@
   <body>
     <div class="container">
       <div id="zero" class="div_list">Besant Technology</div>
-      <div id="one" class="div_list">Home</div>
-      <div id="two" class="div_list">About</div>
-      <div id="three" class="div_list">Contacts</div>
-      <div id="four" class="div_list">Blogs</div>
-      <div id="five" class="div_list"><a href="./Registerpage.html" target="_blank">Register</a></div>
-      <div id="six" class="div_list"><a href="">Sign in</a></div>
+      <div id="one" class="div_list">
+        <a
+          href="https://www.besanttechnologies.com/home-page?utm_source=google_adwords&utm_medium=ppc&utm_campaign=BesantBan_bmm&utm_content=Ravi&gad_source=1&gad_campaignid=22805819249&gbraid=0AAAABAtUr0sfCydFaGu6RP4YMv5F4Pf7E&gclid=CjwKCAjwisnGBhAXEiwA0zEOR4pWpNDSKhDyDomJAG49FUyPh1MI_o3p5yJaw7RLY-oIVx24JqZ-PRoCgcIQAvD_BwE"
+        >Home</a
+        >
+      </div>
+      <div id="two" class="div_list">
+        <a href="https://www.besanttechnologies.com/company/about-us">About</a>
+      </div>
+      <div id="three" class="div_list"><a href="https://www.besanttechnologies.com/contact-us">Contacts</a></div>
+      <div id="four" class="div_list"><a href="https://www.besanttechnologies.com/blog">Blogs</a></div>
+      <div id="five" class="div_list">
+        <a href="./Registerpage.html" target="_blank">Register</a>
+      </div>
+      <div id="six" class="div_list"><a href="./login.html">Sign in</a></div>
     </div>
 
     <div id="image">
@@ -147,8 +166,13 @@
         classes, aiming to help students and professionals upgrade their skills.
       </p>
       <button>
-        <a href="https://www.besanttechnologies.com/branches/besant-technologies-marathahalli-bangalore" target="_blank">Learn More</a>
+        <a
+          href="https://www.besanttechnologies.com/branches/besant-technologies-marathahalli-bangalore"
+          target="_blank"
+          >Learn More</a
+        >
       </button>
     </div>
   </body>
 </html>
+
